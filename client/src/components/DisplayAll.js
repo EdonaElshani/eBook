@@ -40,6 +40,7 @@ const DisplayAll = (props) => {
           </p>
           <a className="btn bg-purple">Read More</a>
         </div>
+        <h4 className="pt-5 text-center">List of Books</h4>
         <div className="d-flex gap-5 my-5 flex-wrap justify-content-center">
           {allBooks.map((books, index) => {
             return (

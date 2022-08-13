@@ -4,8 +4,8 @@ import bookLogo from "../Fotografite/SVG/Book-Logo.svg";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg">
-      <img src={bookLogo} alt="Book Logo" className="logoImg" />
+    <nav className="navbar navbar-expand-lg mb-4">
+      <img src={bookLogo} alt="Book Logo" className="logoImg mx-2" />
       <div className="container-fluid">
         <a className="navbar-brand text-purple" href="#">
           eBook

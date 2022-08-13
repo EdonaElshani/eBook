@@ -53,7 +53,7 @@ const EditPet = () => {
   };
 
   return (
-    <div className="container gradient shadow py-5 mt-2 rounded-3">
+    <div className="container gradient shadow py-5 mt-2 rounded-3 mb-3">
       {/* Book not found */}
       {bookNotFound ? navigate("/NotFound") : null}
 

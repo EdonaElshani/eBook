@@ -18,7 +18,7 @@
 }
 .header-section h1 {
   margin-top: 1em;
-  padding-top: 2em;
+  padding-top: 3em;
   width: 50%;
 }
 .header-section p {
@@ -29,7 +29,6 @@
 }
 .logoImg{
   width: 3rem;
-  margin: 1em;
 }
 .active{
   font-weight: bold;
@@ -45,15 +44,22 @@
 }
 .gradient{
   background: hsla(306, 44%, 22%, 1);
-
   background: linear-gradient(180deg, hsla(306, 44%, 22%, 1) 50%, hsla(277, 67%, 77%, 1) 50%, hsla(0, 0%, 100%, 1) 50%);
-  
   background: -moz-linear-gradient(180deg, hsla(306, 44%, 22%, 1) 50%, hsla(277, 67%, 77%, 1) 50%, hsla(0, 0%, 100%, 1) 50%);
-  
   background: -webkit-linear-gradient(180deg, hsla(306, 44%, 22%, 1) 50%, hsla(277, 67%, 77%, 1) 50%, hsla(0, 0%, 100%, 1) 50%);
-  
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#4F1F4A", endColorstr="#CE9EEC", GradientType=1 );
 }
 .form{
   width: 30vw;
+}
+footer{
+  border-top: 2px solid #4f1f4a;
+}
+footer a:hover {
+  border-bottom: 1px solid #4f1f4a;
+  color: black;
+  transition: all 0.3s ease;
+}
+ion-icon {
+  font-size: 1.5em;
 }
