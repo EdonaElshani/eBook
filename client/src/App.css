@@ -63,3 +63,8 @@ footer a:hover {
 ion-icon {
   font-size: 1.5em;
 }
+
+.sliderImg{
+  height: 70vh;
+  object-fit: cover;
+}

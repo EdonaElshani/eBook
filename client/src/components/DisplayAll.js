@@ -3,6 +3,7 @@ import axios from "axios";
 import "../App.css";
 import { Link } from "react-router-dom";
 import Accordion from "./Accordion";
+import Slider from "./Slider";
 
 const DisplayAll = (props) => {
   const [allBooks, setAllBooks] = useState([]);
@@ -73,6 +74,7 @@ const DisplayAll = (props) => {
           })}
         </div>
       </div>
+      <Slider/>
       <Accordion />
     </div>
   );
