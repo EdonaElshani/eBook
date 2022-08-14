@@ -1,8 +1,11 @@
 const Book = require("../models/ebook.model");
+const jwt = require("jsonwebtoken");
+const SECRET = 'supersecret';
 
 /* Create BOOK */
 const createBook = (req, res)=>{
-    Book.create(req.body)
+    const user = jwt.verify(req.cookies.userToken, SECRET);
+    Book.create({...req.body, createdBy: user._id})
     .then((newBook) =>{
         console.log(newBook);
         res.json(newBook);
@@ -13,7 +16,7 @@ const createBook = (req, res)=>{
 }
 /* Display ALL Books */
 const getAllBooks = (req, res) => {
-    Book.find()
+    Book.find({}).populate('createdBy', 'username email')
     .then((allBooks) =>{
         res.json(allBooks);
     })

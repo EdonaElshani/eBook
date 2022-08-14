@@ -5,21 +5,21 @@ import "../App.css";
 const Footer = () => {
   return (
     <div>
-    <footer className="container d-flex justify-content-around gap-5 p-2 mt-5" id="footer">
+    <footer className="container d-flex justify-content-around gap-5 p-2 mt-5 " id="footer">
        <div className="w-25">
         <img src={logo} alt="logo" className="logoImg" />
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
         <p>consectetur adipiscing elit, sed do eiusmod tempor incidid</p>
        </div>
        <div className="d-flex flex-column gap-3">
-        <h5 className="text-purple">QUICK LINKS</h5>
+        <h5 className="text-purple text-center">QUICK LINKS</h5>
         <a href="#" className='text-decoration-none text-purple'>Home</a>
           <a href="#" className='text-decoration-none text-purple'>Contact us</a>
           <a href="#" className='text-decoration-none text-purple'>Login</a>
           <a href="#" className='text-decoration-none text-purple'>Sign up</a>
        </div>
        <div className="d-flex flex-column gap-3">
-        <h5 className="text-purple">CONTACT</h5>
+        <h5 className="text-purple text-center">CONTACT</h5>
         <p>
             <a href="https://goo.gl/maps/E3x7UJXbo3CHr6z97" className='text-decoration-none text-purple'
               ><ion-icon name="location-outline"></ion-icon> Prishtinë,
@@ -37,7 +37,7 @@ const Footer = () => {
             >
           </p>
        </div>
-       <div className="d-flex flex-column gap-3">
+       <div className="d-flex flex-column gap-3 align-items-center">
           <h5 className="text-purple">FOLLOW US:</h5>
           <ion-icon name="logo-facebook" className="fs-2"></ion-icon>
           <ion-icon name="logo-instagram"></ion-icon>
