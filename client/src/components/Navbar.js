@@ -33,6 +33,16 @@ const Navbar = () => {
                 Create Book
               </NavLink>
             </li>
+            <li className="nav-item">
+              <a className="nav-link text-purple" href="#categories">
+                Categories
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link text-purple" href="#footer">
+                Contact Us
+              </a>
+            </li>
           </ul>
         </div>
       </div>

@@ -2,12 +2,12 @@ import React from "react";
 
 const Accordion = () => {
   return (
-    <div class="container accordion py-5 mb-3" id="accordionExample">
+    <div className="container accordion py-5 mb-3" id="accordionExample">
         <h5 className="pb-4 text-center">Frequently Asked Questions</h5>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
+      <div className="accordion-item">
+        <h2 className="accordion-header" id="headingOne">
           <button
-            class="accordion-button fw-bold"
+            className="accordion-button fw-bold"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#collapseOne"
@@ -19,11 +19,11 @@ const Accordion = () => {
         </h2>
         <div
           id="collapseOne"
-          class="accordion-collapse collapse show"
+          className="accordion-collapse collapse show"
           aria-labelledby="headingOne"
           data-bs-parent="#accordionExample"
         >
-          <div class="accordion-body">
+          <div className="accordion-body">
             <p>
               All you need is your PC, laptop or hand held device and the free
               Reader software. We offer eBooks in three different formats: PDF
@@ -36,10 +36,10 @@ const Accordion = () => {
           </div>
         </div>
       </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
+      <div className="accordion-item">
+        <h2 className="accordion-header" id="headingTwo">
           <button
-            class="accordion-button collapsed fw-bold"
+            className="accordion-button collapsed fw-bold"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#collapseTwo"
@@ -51,11 +51,11 @@ const Accordion = () => {
         </h2>
         <div
           id="collapseTwo"
-          class="accordion-collapse collapse"
+          className="accordion-collapse collapse"
           aria-labelledby="headingTwo"
           data-bs-parent="#accordionExample"
         >
-          <div class="accordion-body">
+          <div className="accordion-body">
             <p>
               eBooks have DRM security settings that may prevent (or limit)
               printing and copying of some ebooks. These are set by the
@@ -67,10 +67,10 @@ const Accordion = () => {
           </div>
         </div>
       </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
+      <div className="accordion-item">
+        <h2 className="accordion-header" id="headingThree">
           <button
-            class="accordion-button collapsed fw-bold"
+            className="accordion-button collapsed fw-bold"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#collapseThree"
@@ -83,11 +83,11 @@ const Accordion = () => {
         </h2>
         <div
           id="collapseThree"
-          class="accordion-collapse collapse"
+          className="accordion-collapse collapse"
           aria-labelledby="headingThree"
           data-bs-parent="#accordionExample"
         >
-          <div class="accordion-body">
+          <div className="accordion-body">
             <p>
               Yes. You just need to sync with your bookshelf and download the
               ebook the first time. Once the ebook is downloaded onto your

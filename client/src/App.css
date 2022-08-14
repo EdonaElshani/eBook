@@ -1,12 +1,20 @@
 .card{
   width: 17rem;
-  background-color:#4f1f4a;
+  background-color: #f2e5d0;
+  color: #1e1e1e;
   padding: 1em;
 }
-.card img{
-  height: 35vh;
+.card-category:hover{
+  transform: translateY(-0.8rem);
+  transition: all 0.3s ease;
 }
-
+.card img{
+  height: 28vh;
+  object-fit: cover;
+}
+.categoryImg{
+padding: 3.7em 4.85em;
+}
 .header-section {
   background-image: url(../public/Fotografite/Foto/Header.png);
   background-size: cover;
@@ -19,10 +27,6 @@
 .header-section h1 {
   margin-top: 1em;
   padding-top: 3em;
-  width: 50%;
-}
-.header-section p {
-  width: 50%;
 }
 .text-purple{
   color: #4f1f4a;
@@ -37,6 +41,9 @@
 .bg-purple{
   background-color: #4f1f4a;
   color: white;
+}
+.bg-beige{
+  background-color: #f2e5d0;
 }
 .inputSize{
   width: 24vw;

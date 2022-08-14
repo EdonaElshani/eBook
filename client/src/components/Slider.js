@@ -35,21 +35,21 @@ const Slider = () => {
             <img
               src="https://quotefancy.com/media/wallpaper/3840x2160/15478-Margaret-Fuller-Quote-Today-a-reader-tomorrow-a-leader.jpg"
               className="d-block w-100 sliderImg"
-              alt="..."
+              alt="First Quote"
             />
           </div>
           <div className="carousel-item active">
             <img
               src="https://quotefancy.com/media/wallpaper/3840x2160/84197-Neale-Donald-Walsch-Quote-Life-begins-at-the-end-of-your-comfort.jpg"
               className="d-block w-100 sliderImg"
-              alt="..."
+              alt="Second Quote"
             />
           </div>
           <div className="carousel-item">
             <img
               src="https://quotefancy.com/media/wallpaper/3840x2160/4056-Ernest-Hemingway-Quote-There-is-no-friend-as-loyal-as-a-book.jpg"
               className="d-block sliderImg w-100"
-              alt="..."
+              alt="Third quote"
             />
           </div>
         </div>

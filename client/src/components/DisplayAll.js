@@ -4,6 +4,7 @@ import "../App.css";
 import { Link } from "react-router-dom";
 import Accordion from "./Accordion";
 import Slider from "./Slider";
+import Category from "./Category";
 
 const DisplayAll = (props) => {
   const [allBooks, setAllBooks] = useState([]);
@@ -45,24 +46,27 @@ const DisplayAll = (props) => {
         <div className="d-flex gap-5 my-5 flex-wrap justify-content-center">
           {allBooks.map((books, index) => {
             return (
-              <div className="card text-white" key={books._id}>
+              <div className="card bg-purple shadow-sm" key={books._id}>
                 <img src={books.imgPath} className="card-img-top" alt="..." />
                 <div className="card-body">
                   <h5 className="card-title">{books.title}</h5>
                   <p className="card-text">Category: {books.category}</p>
                   <p className="card-text">Price: {books.price}$</p>
                   <div className="d-flex">
-                    <Link to={`/edit/${books._id}`} className="btn btn-primary">
+                    <Link
+                      to={`/edit/${books._id}`}
+                      className="btn btn-outline-success"
+                    >
                       Edit
                     </Link>
                     <Link
                       to={`/details/${books._id}`}
-                      className="btn btn-secondary mx-2"
+                      className="btn btn-outline-secondary mx-2"
                     >
                       Details
                     </Link>
                     <button
-                      className="btn btn-danger"
+                      className="btn btn-outline-danger"
                       onClick={() => handleDelete(books._id)}
                     >
                       Delete
@@ -74,7 +78,8 @@ const DisplayAll = (props) => {
           })}
         </div>
       </div>
-      <Slider/>
+      <Category />
+      <Slider />
       <Accordion />
     </div>
   );

@@ -4,7 +4,8 @@ import "../App.css";
 
 const Footer = () => {
   return (
-    <footer className="container d-flex justify-content-around gap-5 p-2 mt-5">
+    <div>
+    <footer className="container d-flex justify-content-around gap-5 p-2 mt-5" id="footer">
        <div className="w-25">
         <img src={logo} alt="logo" className="logoImg" />
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
@@ -43,11 +44,10 @@ const Footer = () => {
           <ion-icon name="logo-twitter"></ion-icon>
           <ion-icon name="logo-linkedin"></ion-icon>
         </div>
-
-
-    
   </footer>
-  )
-}
+        <p className='bg-purple py-2 text-center'>Copyright ©2022 by Edona Elshani. All rights reserved. </p>
+    </div>
+  );
+};
 
-export default Footer
+export default Footer;
