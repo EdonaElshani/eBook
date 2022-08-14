@@ -33,7 +33,7 @@ const BookForm = () => {
         author,
         noPage,
         price
-      })
+      }, {withCredentials: true},)
       .then((response) => {
         console.log(response);
         navigate("/");
