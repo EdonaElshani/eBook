@@ -6,4 +6,4 @@ This web application is build using MERN and Bootstrap as CSS Framework.
 The features that this application includes are: CREATE/READ/UPDATE/DELETE Books.
 Data Validations are met upon create and edit.
 
-Application is publicly deployed on Amazon EC2
+Authentication is Implemented
