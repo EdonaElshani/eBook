@@ -52,13 +52,6 @@ const Details = () => {
       </div>
 
       <h2>Details about: {title}</h2>
-
-      <div className="text-end">
-      <button onClick={() => deleteBook(id)} className="btn btn-danger">
-       Delete {title}
-      </button>
-      </div>
-
       <div className="d-flex mt-5">
         <h5 className="me-5 ">Book's Category: </h5>
         <p>{category}</p>

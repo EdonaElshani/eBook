@@ -2,7 +2,7 @@ import React from "react";
 
 const Accordion = () => {
   return (
-    <div>
+    <div className="container py-4">
       <h5 className="pb-4 text-center">Frequently Asked Questions</h5>
       <div className="accordion accordion-flush" id="accordionFlushExample">
         <div className="accordion-item">

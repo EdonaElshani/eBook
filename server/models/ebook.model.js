@@ -35,10 +35,10 @@ const BookSchema = {
   },
 
   // Foregin Key
-  createdBy: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "User",
-  },
+  // createdBy: {
+  //   type: mongoose.Schema.Types.ObjectId,
+  //   ref: "User",
+  // },
 
   imgPath: {
     type: String,

@@ -26,6 +26,7 @@ const EditPet = () => {
         setCategory(response.data.category);
         setAuthor(response.data.author);
         setNoPage(response.data.noPage);
+        setPrice(response.data.price);
       })
       .catch((error) => {
         console.log(error);
@@ -41,6 +42,7 @@ const EditPet = () => {
         description,
         author,
         noPage,
+        price
       })
       .then((response) => {
         console.log(response.data);

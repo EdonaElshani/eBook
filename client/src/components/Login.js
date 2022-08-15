@@ -26,11 +26,14 @@ const Login = ({ setIsLoggedin }) => {
       .catch((err) => console.log(err));
   };
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <div>
+    <div className="container gradient shadow py-5 mt-2 rounded-3">
+      <form onSubmit={handleSubmit} className="my-4 mx-auto bg-white form shadow-lg rounded-3 text-center">
+      <h2 className="pt-3 text-purple bw-bold">Login</h2>
+        <div className="d-flex justify-content-center flex-column mx-5 pt-3">
+        <div className="form-group inputSize fw-bold">
           <label htmlFor="email">Email</label>
           <input
+             className="form-control text-center"
             type="email"
             name="email"
             value={user.email}
@@ -39,9 +42,10 @@ const Login = ({ setIsLoggedin }) => {
           />
         </div>
 
-        <div>
+        <div className="form-group inputSize fw-bold">
           <label htmlFor="Password">Password</label>
           <input
+            className="form-control text-center"
             type="password"
             name="password"
             value={user.password}
@@ -49,8 +53,8 @@ const Login = ({ setIsLoggedin }) => {
             required
           />
         </div>
-
-        <button type="submit">Login</button>
+</div>
+      <button type="submit" className="btn bg-purple m-4">Login</button>
       </form>
     </div>
   );

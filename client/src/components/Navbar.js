@@ -72,7 +72,7 @@ const Navbar = ({ isLoggedin, setIsLoggedin }) => {
                 <div className="d-flex">
                   <p className="px-2 pt-2">Hello: {user.username}</p>
                   <button
-                    onclick={handleLogout}
+                    onClick={handleLogout}
                     className="btn-sm btn btn-outline-success"
                     >
                     Logout

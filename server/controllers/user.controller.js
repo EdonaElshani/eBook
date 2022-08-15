@@ -2,7 +2,6 @@ const User = require("../models/user.models");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const SECRET = 'supersecret';
-console.log("SECRET: " + SECRET);
 
 const register = async (req, res) => {
   try {
@@ -17,7 +16,6 @@ const register = async (req, res) => {
     res
       .status(201)
       .cookie("userToken", userToken, {
-        httpOnly: true,
         expires: new Date(Date.now() + 900000),
       })
       .json({ successMessage: "User created successfully", user: newUser });
@@ -53,7 +51,6 @@ const login = async (req, res) => {
         res
           .status(201)
           .cookie("userToken", userToken, {
-            httpOnly: true,
             expires: new Date(Date.now() + 900000),
           })
           .json({
@@ -74,14 +71,13 @@ const logout = (req, res) => {
 };
 
 const getLoggedInUser = async (req, res) => {
-  const user = jwt.verify(req.cookies.userToken, SECRET);
-  User.findOne({ _id: user._id })
-    .then((user) => {
-      res.json(user);
-    })
-    .catch((err) => {
-      console.log(err);
-    });
+  try {
+    const user = jwt.verify(req.cookies.userToken, SECRET);
+    const currentUser = await User.findOne({ _id: user._id });
+    res.json(currentUser);
+  } catch (error) {
+    res.status(401).json({ error });
+  }
 };
 
 module.exports = {
