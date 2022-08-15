@@ -80,7 +80,7 @@ const Navbar = ({ isLoggedin, setIsLoggedin }) => {
                 </div>
               ) : (
                 <ul className="navbar-nav ">
-                  <li className="nav-item">
+                  <li className="nav-item me-1">
                     <NavLink
                       to="/register"
                       className="nav-link btn btn-outline-success"
@@ -91,7 +91,7 @@ const Navbar = ({ isLoggedin, setIsLoggedin }) => {
                   <li className="nav-item">
                     <NavLink
                       to="/login"
-                      className="nav-link btn btn-outline-success mx-2"
+                      className="nav-link btn btn-outline-success"
                     >
                       Login
                     </NavLink>

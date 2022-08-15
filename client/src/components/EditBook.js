@@ -73,8 +73,8 @@ const EditPet = () => {
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
               />
-              {errors.name ? (
-                <p className="text-danger">{errors.title.message}</p>
+              {errors.title ? (
+                <p className="text-danger fw-bold">{errors.title.message}</p>
               ) : null}
             </div>
             <div className="form-group inputSize">
@@ -90,7 +90,7 @@ const EditPet = () => {
                 onChange={(e) => setDescription(e.target.value)}
               />
               {errors.description ? (
-                <p className="text-danger">{errors.description.message}</p>
+                <p className="text-danger fw-bold">{errors.description.message}</p>
               ) : null}
             </div>
             <div className="form-group inputSize fw-bold">
@@ -102,6 +102,9 @@ const EditPet = () => {
                 className="form-control text-center"
                 onChange={(e) => setAuthor(e.target.value)}
               />
+               {errors.author ? (
+              <p className="text-danger">{errors.author.message}</p>
+            ) : null}
             </div>
             <div className="form-group inputSize fw-bold">
               <label htmlFor="author">Price: </label>
@@ -112,6 +115,9 @@ const EditPet = () => {
                 className="form-control text-center"
                 onChange={(e) => setPrice(e.target.value)}
               />
+                {errors.price ? (
+              <p className="text-danger">{errors.price.message}</p>
+            ) : null}
             </div>
             <div className="form-group inputSize fw-bold">
               <label htmlFor="author">Number of Pages: </label>
@@ -123,6 +129,9 @@ const EditPet = () => {
                 className="form-control text-center"
                 onChange={(e) => setNoPage(e.target.value)}
               />
+                {errors.noPage ? (
+              <p className="text-danger fw-bold">{errors.noPage.message}</p>
+            ) : null}
           </div>
           <div className="form-group d-flex flex-column fw-bold mt-1 ">
                 <label htmlFor="category">Category: </label>
